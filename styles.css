@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+body {
+  text-align: center;
+  display: block;
+  margin: 8px;
+  font-family: 'Lora', serif;
+  color: #5d4e48;
+  background: url('images/adrian-korte-record-playing.jpg') no-repeat;
+  background-size: cover;
+}
+
+.content {
+  background-color: #fad7a0;
+  margin: 20px;
+  padding: 30px;
+  border-style: double;
+  border-width: 5px;
+  font-size: 18px;
+  text-align: left;
+  width: 1200px;
+  display: inline-block;
+}
+
+/* for piano */
+.key {
+  font-family: 'Lora';
+  position: absolute;
+  font-weight: 100;
+  font-size: 12px;
+  border: 1px solid rgba(32, 32, 32, 0.2);
+  border-radius: 0px 0px 5px 5px;
+  cursor: crosshair;
+  box-shadow: 0px 5px 1px rgba(32, 32, 32, 0.2);
+  transition: margin 0.05s ease, background-color 0.05s ease,
+    box-shadow 0.05s ease;
+  -webkit-transition: margin 0.05s ease, background-color 0.05s ease,
+    box-shadow 0.05s ease;
+}
+.key:hover {
+  background-color: #768d8e;
+  cursor: crosshair;
+}
+.key .label {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+}
+.keyLabel {
+  font-weight: 900;
+  /* text-shadow: 0px -1px 5px black; */
+  font-size: 15px;
+}
+.black {
+  background-color: #5d4e48;
+  color: #f2ebce;
+  z-index: 1;
+  text-shadow: 0px -1px 1px black;
+}
+.white {
+  background-color: #f2ebce;
+  color: #5d4e48;
+  z-index: 0;
+  /* text-shadow: 0px 1px 1px #08e8f5; */
+}
+.keyboard-holder {
+  margin: 30px auto;
+  margin-top: 50px;
+  height: 500px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+}
+/* for acoustic */
+.btn {
+  display: block;
+  font-family: 'Lora';
+  font-weight: 100;
+  font-size: 12px;
+  border: 1px solid rgba(32, 32, 32, 0.2);
+  border-radius: 0px 0px 5px 5px;
+  cursor: crosshair;
+  box-shadow: 0px 5px 1px rgba(32, 32, 32, 0.2);
+  transition: margin 0.05s ease, background-color 0.05s ease,
+    box-shadow 0.05s ease;
+  -webkit-transition: margin 0.05s ease, background-color 0.05s ease,
+    box-shadow 0.05s ease;
+}
+.btn:hover {
+  background-color: #768d8e;
+  cursor: crosshair;
+}
+
+.btn .label {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+}
+
+.keyLabel {
+  font-weight: 900;
+  /* text-shadow: 0px -1px 5px black; */
+  font-size: 15px;
+}
+.magenta {
+  background-color: #fd2ea4;
+  color: #ffd088;
+  z-index: 1;
+  text-shadow: 0px -1px 1px black;
+}
+.indigo {
+  background-color: #984ffe;
+  color: #5d4e48;
+  z-index: 0;
+  /* text-shadow: 0px 1px 1px #08e8f5; */
+}
+.acoustic-holder {
+  margin: 30px auto;
+  height: 500px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+}
+
+/*.playing {background-color: #1BC0EA;}*/
+
+a {
+  text-decoration: none;
+  color: #5d4e48;
+}
+a:hover {
+  cursor: crosshair;
+  color: #5d4e48;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+  text-align: center;
+}
